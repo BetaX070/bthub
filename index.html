@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#160a08" />
+  <meta property="og:title" content="Cacao & Co. | Handcrafted Chocolate" />
+  <meta property="og:description" content="Small-batch chocolate and gift boxes made with carefully selected cacao." />
+  <meta property="og:type" content="website" />
+  <meta name="description" content="Cacao & Co. — handcrafted chocolate made with care." />
+  <title>Cacao & Co. | Handcrafted Chocolate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="announcement">Free delivery on orders over ₦50,000 • Crafted fresh every week</div>
+
+  <header>
+    <div class="container nav">
+      <a class="logo" href="#home">Cacao<span>&</span>Co.</a>
+      <nav class="navlinks" id="navlinks">
+        <a href="#shop">Shop</a><a href="#story">Our Story</a><a href="#team">Team</a><a href="#visit">Visit Us</a><a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn cart" id="cartBtn" type="button" aria-label="Open cart" aria-controls="cartModal" aria-expanded="false">
+          <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 10.1a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 1.9-1.4L21 8H6"/><circle cx="9.5" cy="20" r="1.2"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="menu-btn" id="menuBtn" type="button" aria-label="Toggle navigation menu" aria-controls="navlinks" aria-expanded="false">
+          <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div>
+          <div class="eyebrow">Handcrafted • Small Batch • Made with Love</div>
+          <h1>Chocolate worth slowing down for.</h1>
+          <p class="hero-copy">Beautifully crafted chocolate made from carefully selected cacao, rich flavors, and a little obsession with getting every bite right.</p>
+          <div class="hero-buttons">
+            <a href="#shop" class="btn btn-gold">Explore Chocolate →</a>
+            <a href="#story" class="btn btn-light">Our Story</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="chocolate-box"><div class="box-label"><div><small>Since 2020</small><strong>Cacao<br>& Co.</strong><small>Fine Chocolate</small></div></div></div>
+          <div class="truffle t1"></div><div class="truffle t2"></div><div class="truffle t3"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="shop">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="eyebrow" style="color:var(--gold)">The Collection</div><h2>Made for chocolate people.</h2></div>
+          <p>From deeply dark bars to creamy milk chocolate and gift-ready boxes, discover something for every kind of craving.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <div class="product-img dark"><span class="badge">Best seller</span><div class="piece"></div></div>
+            <div class="card-body">
+              <h3>72% Dark Cacao</h3>
+              <p>Deep, smooth and naturally intense with roasted cacao notes.</p>
+              <div class="product-bottom"><span class="price">₦8,500</span><button class="add" data-id="p1" data-name="72% Dark Cacao" data-price="8500">Add to cart</button></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="product-img light"><span class="badge">New</span><div class="piece"></div></div>
+            <div class="card-body">
+              <h3>Silky Milk Bar</h3>
+              <p>Velvety milk chocolate with a delicate caramel finish.</p>
+              <div class="product-bottom"><span class="price">₦7,500</span><button class="add" data-id="p2" data-name="Silky Milk Bar" data-price="7500">Add to cart</button></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="product-img gold"><div class="piece"></div></div>
+            <div class="card-body">
+              <h3>Hazelnut Praline</h3>
+              <p>Roasted hazelnuts folded into silky, indulgent chocolate.</p>
+              <div class="product-bottom"><span class="price">₦10,500</span><button class="add" data-id="p3" data-name="Hazelnut Praline" data-price="10500">Add to cart</button></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="product-img"><span class="badge">Gift</span><div class="piece"></div></div>
+            <div class="card-body">
+              <h3>Signature Gift Box</h3>
+              <p>A curated collection of our favorite handcrafted chocolates.</p>
+              <div class="product-bottom"><span class="price">₦25,000</span><button class="add" data-id="p4" data-name="Signature Gift Box" data-price="25000">Add to cart</button></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="story">
+      <div class="container story">
+        <div class="story-visual"><div class="bean b1"></div><div class="bean b2"></div><div class="bean b3"></div></div>
+        <div class="story-copy">
+          <div class="eyebrow" style="color:var(--gold)">Our Story</div>
+          <h2>From cacao bean to your favorite moment.</h2>
+          <p>Cacao & Co. began with a simple idea: chocolate should feel special without feeling complicated.</p>
+          <p>We work in small batches, carefully balancing texture, aroma, and flavor so every bar tastes as good as the first one we made.</p>
+          <div class="stats"><div class="stat"><strong>6+</strong><span>Years crafting</span></div><div class="stat"><strong>20k+</strong><span>Happy customers</span></div><div class="stat"><strong>100%</strong><span>Made with care</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="promise">
+      <div class="container">
+        <div class="section-head"><div><div class="eyebrow">Why Cacao & Co.</div><h2>Simple ingredients. Serious chocolate.</h2></div><p>Quality is not a feature for us. It is the foundation of everything we make.</p></div>
+        <div class="promise-grid">
+          <div class="promise-card"><div class="promise-icon"><svg class="feature-svg" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 5v14M12 5v14M16 5v14M4 10h16M4 14h16"/></svg></div><h3>Premium cacao</h3><p>We choose cacao for character, aroma, and depth—not just a label.</p></div>
+          <div class="promise-card"><div class="promise-icon"><svg class="feature-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 1.6 5.4L19 10l-5.4 1.6L12 17l-1.6-5.4L5 10l5.4-1.6L12 3Z"/><path d="m19 15 .8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8L19 15Z"/></svg></div><h3>Small batches</h3><p>Smaller production means careful attention to every texture and finish.</p></div>
+          <div class="promise-card"><div class="promise-icon"><svg class="feature-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10h18v11H3zM2 7h20v3H2zM12 7v14"/><path d="M12 7H8.5a2.5 2.5 0 1 1 2.5-2.5V7ZM12 7h3.5A2.5 2.5 0 1 0 13 4.5V7Z"/></svg></div><h3>Made to gift</h3><p>Thoughtful packaging and beautiful presentation for life's little celebrations.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team" id="team">
+      <div class="container">
+        <div class="section-head"><div><div class="eyebrow" style="color:var(--gold)">Meet the Team</div><h2>The people behind the chocolate.</h2></div><p>A small team with a big love for cacao, hospitality, and creating memorable experiences.</p></div>
+        <div class="team-grid">
+          <article class="member"><div class="member-photo"><svg class="person-svg" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="32" r="17"/><path d="M20 88c3-20 14-31 30-31s27 11 30 31"/><path d="M31 20c3-11 35-15 39 2-5-5-11-6-17-4-7-4-14-2-22 2Z"/></svg></div><div class="member-info"><span class="role">Founder & Chocolatier</span><h3>Amara Okafor</h3><p>Leads our recipes, sourcing, and the creative direction behind every collection.</p></div></article>
+          <article class="member"><div class="member-photo"><svg class="person-svg" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="32" r="17"/><path d="M20 88c3-20 14-31 30-31s27 11 30 31"/><path d="M32 27c3-15 33-18 37 1-7-4-12-5-18-3-6-2-12 0-19 2Z"/></svg></div><div class="member-info"><span class="role">Head of Production</span><h3>Daniel Mensah</h3><p>Turns carefully measured ingredients into consistently beautiful chocolate.</p></div></article>
+          <article class="member"><div class="member-photo"><svg class="person-svg" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="32" r="17"/><path d="M20 88c3-20 14-31 30-31s27 11 30 31"/><path d="M34 27c4-10 28-13 34 1"/></svg></div><div class="member-info"><span class="role">Customer Experience</span><h3>Zainab Bello</h3><p>Makes sure every order, gift, and visit feels warm, personal, and memorable.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="visit">
+      <div class="container visit">
+        <div class="contact-card">
+          <div class="eyebrow">Come Say Hello</div><h2>Visit our chocolate studio.</h2><p>Drop in for chocolate, gifts, or simply a good conversation. We would love to meet you.</p>
+          <div class="contact-list">
+            <div class="contact-row"><span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5.5-8 11-8 11S4 15.5 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><b>Address</b><span>24 Cocoa Avenue, Victoria Island, Lagos, Nigeria</span></div></div>
+            <div class="contact-row"><span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3.5 9 3l2 5-2.2 1.6a15 15 0 0 0 5.1 5.1l1.6-2.2 5 2-.5 2.5c-.3 1.6-1.8 2.6-3.4 2.3C9.2 17.8 6.2 14.8 4.7 6.9 4.4 5.3 5 3.8 6.5 3.5Z"/></svg></span><div><b>Phone</b><a href="tel:+2348001234567"><span>+234 800 123 4567</span></a></div></div>
+            <div class="contact-row"><span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span><div><b>Email</b><a href="mailto:hello@cacaoandco.com"><span>hello@cacaoandco.com</span></a></div></div>
+          </div>
+          <br><a class="btn btn-gold" href="#contact">Send us a message</a>
+        </div>
+        <div class="hours">
+          <h3>Opening hours</h3>
+          <div class="hour-row"><span>Monday</span><span>9:00 AM — 6:00 PM</span></div>
+          <div class="hour-row"><span>Tuesday</span><span>9:00 AM — 6:00 PM</span></div>
+          <div class="hour-row"><span>Wednesday</span><span>9:00 AM — 6:00 PM</span></div>
+          <div class="hour-row"><span>Thursday</span><span>9:00 AM — 6:00 PM</span></div>
+          <div class="hour-row"><span>Friday</span><span>9:00 AM — 7:00 PM</span></div>
+          <div class="hour-row"><span>Saturday</span><span>10:00 AM — 7:00 PM</span></div>
+          <div class="hour-row"><span>Sunday</span><span class="today">Closed</span></div>
+          <p style="color:var(--muted);font-size:.8rem;margin-top:20px">Hours may change on public holidays. Please contact us before making a special trip.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form" id="contact">
+      <div class="container">
+        <div class="section-head" style="display:block;text-align:center"><div class="eyebrow" style="color:var(--gold)">Get in touch</div><h2>Let's make something delicious.</h2><p style="margin:14px auto 0">Questions, wholesale orders, gifts, or collaborations? Send us a message.</p></div>
+        <form id="contactForm">
+          <div class="form-grid">
+            <div class="field"><label for="contact-name">Name</label><input id="contact-name" name="name" autocomplete="name" required placeholder="Your name"></div>
+            <div class="field"><label for="contact-email">Email</label><input id="contact-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com"></div>
+            <div class="field full"><label for="contact-subject">Subject</label><input id="contact-subject" name="subject" required placeholder="How can we help?"></div>
+            <div class="field full"><label for="contact-message">Message</label><textarea id="contact-message" name="message" required placeholder="Tell us what you need..."></textarea></div>
+          </div>
+          <button class="btn btn-gold" type="submit">Send Message →</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div><div class="footer-logo">Cacao&Co.</div><p>Handcrafted chocolate made with carefully selected cacao and a lot of love.</p></div>
+        <div><h4>Explore</h4><a href="#shop">Shop</a><a href="#story">Our Story</a><a href="#team">Our Team</a></div>
+        <div><h4>Visit</h4><a href="#visit">Location</a><a href="#visit">Opening Hours</a><a href="#contact">Contact</a></div>
+        <div><h4>Follow</h4><span class="footer-link-disabled">Instagram — coming soon</span><span class="footer-link-disabled">Facebook — coming soon</span><span class="footer-link-disabled">TikTok — coming soon</span></div>
+      </div>
+      <div class="copyright"><span>© 2026 Cacao & Co. All rights reserved.</span><span>Privacy • Terms • Shipping</span></div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">Added to your cart.</div>
+
+  <div class="modal" id="cartModal" role="dialog" aria-modal="true" aria-labelledby="cartTitle" aria-hidden="true">
+    <div class="modal-box" tabindex="-1">
+      <div class="modal-head"><h3 id="cartTitle">Your Cart</h3><button class="close" id="closeCart" type="button" aria-label="Close cart">&times;</button></div>
+      <div class="cart-items" id="cartItems"><p style="color:var(--muted)">Your cart is empty.</p></div>
+      <div class="cart-total"><span>Total</span><span id="cartTotal">₦0</span></div>
+      <button class="btn btn-gold" style="width:100%" id="checkout" type="button">Proceed to Order</button>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
